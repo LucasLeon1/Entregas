@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Mukta:wght@200&family=Poppins:ital,wght@1,300&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Lobster&family=Mukta:wght@200&family=Poppins:ital,wght@1,300&display=swap');
+
+/*{
+
+}
+*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFE270;
+}
+
+header {
+    display: flex;
+    height: 50px;
+    width: 99%;
+    background: radial-gradient(circle, rgba(255, 145, 145, 1) 0%, rgba(255, 171, 0, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Gentium Book Plus',serif;
+    font-family: 'Mukta',sans-serif;
+    font-family: 'Poppins',sans-serif;
+    font-family: 'Rubik Moonrocks',cursive;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.footerCaja {
+    display: flex;
+    width: 99%;
+    background: radial-gradient(circle, rgba(255, 145, 145, 1) 0%, rgba(255, 171, 0, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    padding: 10px;
+    justify-content: space-around;
+    align-items: cente
+}
+
+.hijoFooter h2 {
+    text-align: start;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.Titulo {
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+}
+.descripcion {
+    font-size: 14px;
+    font-weight: 600;
+}
+.REG {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly  ;
+    padding: 50px;
+}
+
+.hijoREG {
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hijohistoria {
+    height: 500px;
+    width: 500px;
+    border-radius: 6px;
+}
+
+.automotor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hijoautomotor {
+    height: 420px;
+    width: 420px;
+    border-radius: 6px;
+    
+}
+.imagenautomotor{
+    height: 300px;
+    width: 420px;   
+}
+.imgcontacto{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.contfin {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    ;
+}
+
+form {
+    border-radius: 3px;
+    font-size: 0.8em;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: none;
+    width: 280px;
+}
+
+.contacto {
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+ /* Arranca GRID */
+
+ header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+footer {
+    grid-area: footer;
+}
+
+.botonWsp img{
+    width: 70px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.title{
+    padding: 20PX 0;
+    text-align: center;
+    font-size: 3.3em;
+    font-weight: 800;
+}
+
+.content{
+    width: 96%;
+    display: grid;
+    gap: 3em;
+    margin: 2.5em;
+    
+ 
+     
+  }
+.caja1{
+  grid-column: 1;
+  grid-row: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.caja2{
+
+grid-column: 2;
+grid-row: 1;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+}
+.caja3{
+    grid-column: 2;
+    grid-row: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+   
+    }
+.caja4{
+    grid-column: 1;
+    grid-row: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+ }
+
+
+.gridPadreReglamento {
+    display: grid;
+    grid-template-areas:
+        " header    "
+        "main  "
+        "footer ";
+
+}
+
+.gridHijoReglamento {
+    grid-area: main;
+
+
+}
+
+.gridPadreHistoria {
+    display: grid;
+    grid-template-areas:
+        " header header header   "
+        "main main main "
+        "footer footer footer"
+    ;
+
+}
+
+.gridHijoHistoria {
+    grid-area: main;
+
+
+}
+
+.gridPadreContacto {
+    display: grid;
+    grid-template-areas:
+        " header header header   "
+        "main main main "
+        "footer footer footer"
+    ;
+
+}
+
+.gridHijoContacto {
+    grid-area: main;
+
+
+}
+
+.gridPadreAutomotores {
+    display: grid;
+    grid-template-areas:
+        " header header header   "
+        "main main main "
+        "footer footer footer"
+    ;
+
+}
+
+.gridHijoAutomotores {
+    grid-area: main;
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .gridPadreReglamento {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer";
+
+    }
+
+    .gridPadreHistoria {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer"
+        ;
+
+    }
+
+    .gridPadreContacto {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer"
+        ;
+
+    }
+
+
+    .gridPadreAutomotores {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer"
+        ;
+
+    }
+
+    h1 {
+        font-size: 8px
+    }
+    .column { 
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center
+       }
+    .vuelta{ 
+        order: 1;
+        align-items: center;
+        justify-content: center
+       }
+   
+    
+       .title {
+        padding: 20PX 0;
+        text-align: center;
+        font-size: 3.3em;
+        font-weight: 800;
+    }
+    
+    .content{
+        width: 96%;
+        display: grid;
+        gap: 3em;
+        margin: 2.5em;
+        
+     
+         
+      }
+     
+    .caja1{
+      grid-column: 1;
+      grid-row: 1;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    
+    .caja2{
+    
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    }
+    .caja3{
+        grid-column: 1;
+        grid-row: 3;
+ 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    text-align: center;
+       
+        }
+    .caja4{
+        grid-column: 1;
+        grid-row: 4;
+ 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    
+      
+     }
+}
+;
+
+@media (max-width:550px) {
+    
+    .gridPadreReglamento {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer";
+
+    }
+    .gridPadreHistoria {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer"
+        ;
+
+    }
+    .gridPadreContacto {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer"
+        ;
+
+    }
+    .gridPadreAutomotores {
+        display: grid;
+        grid-template-areas:
+            " header"
+            "main "
+            "footer"
+        ;
+
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+    .column { 
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center
+       }
+    .vuelta{ 
+        order: 1;
+        align-items: center;
+        justify-content: center
+       }
+    .title {
+        padding: 20PX 0;
+        text-align: center;
+        font-size: 3.3em;
+        font-weight: 800;
+    }
+    
+    .content{
+        width: 96%;
+        display: grid;
+        gap: 3em;
+        margin: 2.5em;
+      }
+      .caja1{
+        grid-column: 1;
+        grid-row: 1;
+ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+      }
+      .caja2{ 
+      grid-column: 1;
+      grid-row: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
+      }
+      .caja3{
+          grid-column: 1;
+          grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      text-align: center;   
+          }
+      .caja4{
+          grid-column: 1;
+          grid-row: 4;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+}
+
+@media screen and (max-width:899px) {
+   
+    .gridPadreReglamento {
+        display: grid;
+        grid-template-areas:
+            " header header"
+            "main main "
+            "footer footer";
+
+    }
+
+    .gridPadreHistoria {
+        display: grid;
+        grid-template-areas:
+            " header header"
+            "main main "
+            "footer footer"
+        ;
+
+    }
+
+    .gridPadreContacto {
+        display: grid;
+        grid-template-areas:
+            " header header"
+            "main main "
+            "footer footer"
+        ;
+
+    }
+
+
+    .gridPadreAutomotores {
+        display: grid;
+        grid-template-areas:
+            " header header"
+            "main main "
+            "footer footer"
+        ;
+    }
+    h1 {
+        font-size: 16px;
+
+    }
+    .column { 
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center
+       }
+       .vuelta{ 
+        order: 1;
+        align-items: center;
+        justify-content: center
+       }
+       .title {
+        padding: 20PX 0;
+        text-align: center;
+        font-size: 3.3em;
+        font-weight: 800;
+    }
+    
+    .content{
+        width: 96%;
+        display: grid;
+        gap: 3em;
+        margin: 2.5em;
+      }
+      .caja1{
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+      
+      .caja2{
+      
+      grid-column: 1;
+      grid-row: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
+      }
+      .caja3{
+          grid-column: 1;
+          grid-row: 3;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      text-align: center;
+         
+          }
+      .caja4{
+          grid-column: 1;
+          grid-row: 4;
+ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        
+       }
+  
+}
