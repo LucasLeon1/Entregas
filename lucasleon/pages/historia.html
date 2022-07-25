@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -30,11 +31,13 @@
 
         <div class="historia">
             <div class="hijohistoria imagenhistoria ">
-                <img src="../images/02-de-Junio.-Día-Nacional-del-Bombero-Voluntario.jpeg" alt="">
+                <img data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" src="../images/02-de-Junio.-Día-Nacional-del-Bombero-Voluntario.jpeg" alt="">
 
           </div>
             <div class="hijohistoria imagenhistoria  vuelta">
-                <img src="../images/arton1719.jpg" alt="">
+                <img  src="../images/arton1719.jpg" alt="">
             </div>
 
             <div class="hijohistoria descripcion  vuelta">
@@ -87,7 +90,10 @@
                     </div>
             <div class="hijohistoria imagenhistoria">
               
-                <img src="../images/boba new.jpg" alt="">
+                <img data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500" src="../images/boba new.jpg" alt="">
             </div>
       
             <div class="hijohistoria descripcion">
@@ -148,5 +154,9 @@
         </div>
     
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
